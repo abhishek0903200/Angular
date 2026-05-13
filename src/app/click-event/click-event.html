@@ -1,0 +1,10 @@
+<p>click-event works!</p>
+<button (click)="handleClick()">Click Me</button>
+
+<input (input)="onTyping($event)" placeholder="Type something...">
+
+<input (keyup)="onKeyup($event)" placeholder="Press any key...">
+
+<div (mouseover)="onHover()" (mouseleave)="onleave()" class="hover-box">
+  Hover over me!
+</div>

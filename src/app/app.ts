@@ -3,25 +3,43 @@ import { RouterOutlet } from '@angular/router';
 import { Login } from './login/login';
 import { SignInComponent } from './signin/sigin';
 import { Events } from './events/events';
+import { ClickEvent } from './click-event/click-event';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, SignInComponent, Events],
+  imports: [
+    ClickEvent,
+    // Login, SignInComponent, Events
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
+
+
+  // count = 0;
+
+  // handleClick(){
+  //   let abc = "Hi there !";
+  //   console.log("Button clicked:", abc);
+  //   this.helloWorld();
+  // }
+
+  // helloWorld(){
+  //   console.log("Hello World !");
+  // }
   
-  name = 'Angular';
-  username = 'abhishek';
-  isAdmin = true;
-  count = 5;
-  price = 23.99;
-  isLogin = true;
+  // name: String = 'Angular';
+  // username: String = 'abhishek';
+  // isAdmin: Boolean = true;
+  // count: Number = 5;
+  // price: Number = 23.99;
+  // isLogin: Boolean = true;
 
-  title = signal("Angular Signals");
+  // title = signal("Angular Signals");
 
-  getUser(){
-    return "Abhishek";
-  }
+  // getUser(){
+  //   return "Abhishek";
+  // }
 }
