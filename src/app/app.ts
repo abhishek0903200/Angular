@@ -6,11 +6,17 @@ import { Events } from './events/events';
 import { ClickEvent } from './click-event/click-event';
 import { CounterApp } from './counter-app/counter-app';
 import { SetGetValue } from './set-get-value/set-get-value';
+import { StylingAngular } from './styling-angular/styling-angular';
+import { IfElse } from './if-else/if-else';
+import { For } from './for/for';
 
 @Component({
   selector: 'app-root',
   imports: [
-    SetGetValue,
+    For
+    // IfElse
+    // StylingAngular,
+    // SetGetValue,
     // CounterApp
     // ClickEvent,
     // Login, SignInComponent, Events
