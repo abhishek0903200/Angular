@@ -5,11 +5,13 @@ import { SignInComponent } from './signin/sigin';
 import { Events } from './events/events';
 import { ClickEvent } from './click-event/click-event';
 import { CounterApp } from './counter-app/counter-app';
+import { SetGetValue } from './set-get-value/set-get-value';
 
 @Component({
   selector: 'app-root',
   imports: [
-    CounterApp
+    SetGetValue,
+    // CounterApp
     // ClickEvent,
     // Login, SignInComponent, Events
   ],

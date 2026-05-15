@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   templateUrl: './set-get-value.html',
   styleUrl: './set-get-value.css',
 })
-export class SetGetValue {}
+export class SetGetValue {
+  name: string = '';
+  city: string = '';
+  email: string = '';
+
+  updateName(val: string) {
+    this.name = val;
+  } 
+
+  getEmail(val: string){
+    this.email = val;
+  }
+}
