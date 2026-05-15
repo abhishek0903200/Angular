@@ -4,11 +4,13 @@ import { Login } from './login/login';
 import { SignInComponent } from './signin/sigin';
 import { Events } from './events/events';
 import { ClickEvent } from './click-event/click-event';
+import { CounterApp } from './counter-app/counter-app';
 
 @Component({
   selector: 'app-root',
   imports: [
-    ClickEvent,
+    CounterApp
+    // ClickEvent,
     // Login, SignInComponent, Events
   ],
   templateUrl: './app.html',

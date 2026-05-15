@@ -1,1 +1,12 @@
-<p>counter-app works!</p>
+<h1>Simple Counter App</h1>
+
+<p class="count">Counter: {{ count }}</p>
+
+<div class ="btns">
+    <!-- <button (click)="increment()">+</button>
+    <button (click)="decrement()">-</button>
+    <button (click)="reset()">Reset</button> -->
+    <button (click)="handle('plus')">+</button>
+    <button (click)="handle('minus')">-</button>
+    <button (click)="handle('reset')">Reset</button>
+</div>
