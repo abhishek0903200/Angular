@@ -10,11 +10,13 @@ import { StylingAngular } from './styling-angular/styling-angular';
 import { IfElse } from './if-else/if-else';
 import { For } from './for/for';
 import { ContextualVariable } from './contextual-variable/contextual-variable';
+import { Signal } from './signal/signal';
 
 @Component({
   selector: 'app-root',
   imports: [
-    ContextualVariable
+    Signal
+    // ContextualVariable
     // For
     // IfElse
     // StylingAngular,
