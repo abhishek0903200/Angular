@@ -1,1 +1,16 @@
-<p>for works!</p>
+@for(u of user; track u.name){
+    <div>
+        <h2>{{u.name}}</h2>
+        <p>Age: {{u.age}}</p>
+    </div>
+}
+
+@for(item of fruits; track $index; let i=$index){
+
+    <p>{{item}}</p>
+    <button (click)="removeItem(i)">Delete</button>
+}
+
+@for(num of numbers; track $index){
+    <p>{{num}}</p>
+}
