@@ -1,1 +1,17 @@
 <p>contextual-variable works!</p>
+@for(item of items; track $index){
+    <!-- let  -->
+  <p>{{$index+1}}->{{item}}</p>
+  <!-- <p>Total count: {{$count}}</p> -->
+
+  @if($first){
+    <p>This is the first item: {{item}}</p>
+  }
+  @if($last){
+    <p>This is the last item: {{item}}</p>
+  }
+}
+
+@for(item of items; track $index){
+  <p [style.background-color]="$even ? 'lightgray' : 'lightblue'">{{item}}</p>
+}

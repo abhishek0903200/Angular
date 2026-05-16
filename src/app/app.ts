@@ -9,11 +9,13 @@ import { SetGetValue } from './set-get-value/set-get-value';
 import { StylingAngular } from './styling-angular/styling-angular';
 import { IfElse } from './if-else/if-else';
 import { For } from './for/for';
+import { ContextualVariable } from './contextual-variable/contextual-variable';
 
 @Component({
   selector: 'app-root',
   imports: [
-    For
+    ContextualVariable
+    // For
     // IfElse
     // StylingAngular,
     // SetGetValue,
